@@ -17,7 +17,7 @@ def monthly_intrest():
     calc2 = payment_amount * days_before_end
     calc3 = calc1 - calc2
     average_daily_balance = calc3 / days
-    monthly = average_daily_balance * monthly_rate/10
+    monthly = average_daily_balance * monthly_rate/100
     print("your monthly intrest rate is:", monthly)
 monthly_intrest()
 
