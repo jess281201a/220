@@ -13,7 +13,7 @@ def monthly_intrest():
     day_of_billing_cycle = eval(input("What is the day of the billing cycle in which the payment was made?:"))
     monthly_rate = annual/12
     calc1 = previous_balance * days
-    days_before_end = days  - day_of_billing_cycle
+    days_before_end = days - day_of_billing_cycle
     calc2 = payment_amount * days_before_end
     calc3 = calc1 - calc2
     average_daily_balance = calc3 / days
