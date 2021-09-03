@@ -49,8 +49,3 @@ class TestClass:
         # Will be executed after the last test
         print(f'\nTotal: {total} / 90')
 
-def hello():
-
-    print('Hello World!')
-
-hello()
