@@ -7,7 +7,7 @@ I certify that this assignment is entirely my own work.
 """
 
 
-def monthly_interest():
+def main():
 
     annual = eval(input("What is your annual interest rate?:"))
     days = eval(input("What is the number of days in your billing cycle?:"))
@@ -24,4 +24,4 @@ def monthly_interest():
     print("your monthly interest rate is:", monthly)
 
 
-monthly_interest()
+main()
