@@ -5,8 +5,6 @@ interest.py
 Problem: A program that computes the monthly interest charge on a credit card account
 I certify that this assignment is entirely my own work.
 """
-
-
 def main():
 
     annual = eval(input('What is your annual interest rate?:'))
@@ -22,6 +20,5 @@ def main():
     average_daily_balance = calc3 / days
     monthly = average_daily_balance * monthly_rate/100
     print('your monthly interest rate is:', monthly)
-
 
 main()
