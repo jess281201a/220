@@ -7,10 +7,12 @@ I collaborated with Johnathon, Thomas, Kristina
 """
 
 def sum_of_threes():
+   add=0
    number = eval(input("What will be your upper bound number?:"))
-   for num in range(3,number,3):
-        3**num
-        print(num)
+   for num in range(3,number+1,3):
+       add=num+add
+       print(num)
+   print("the sum of these are:",add)
     #ended for-loop
 sum_of_threes()
 
