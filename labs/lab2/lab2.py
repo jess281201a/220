@@ -17,7 +17,7 @@ sum_of_threes()
 def multiplication_table():
     for row in range(1,11):
         for column in range(1,11):
-            print(row*column, end="\t")
+            print(row*column, end=" ")
         print()
 multiplication_table()
 
