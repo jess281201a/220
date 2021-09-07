@@ -3,6 +3,7 @@ import math
 Name: Jessica Andrews
 <lab2>.py
 Problem: Math calculations done in python
+I collaborated with Johnathon, Thomas, Kristina
 """
 
 def sum_of_threes():
