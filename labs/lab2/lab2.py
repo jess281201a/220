@@ -38,12 +38,12 @@ def sumSquares():
 sumSquares()
 
 def power():
-   power = 1
+   p = 1
    b = int(input("What is the base?:"))
    e = int(input("What is the exponent?:"))
    for i in range (1,e+1):
-    power=power*b
-   print(b,"^",e,power)
+    p=p*b
+   print(b,"^",e,p)
 
 power()
 
