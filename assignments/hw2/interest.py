@@ -21,4 +21,4 @@ def main():
     monthly = average_daily_balance * monthly_rate/100
     print('your monthly interest rate is:', monthly)
 
-main()
+# main()
