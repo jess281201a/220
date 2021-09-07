@@ -4,7 +4,7 @@ Name: Jessica Andrews
 <lab2>.py
 Problem: Math calculations done in python
 """
-#this was hard
+
 def sum_of_threes():
    number = eval(input("What will be your upper bound number?:"))
    for num in range(3,number,3):
