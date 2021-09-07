@@ -21,16 +21,16 @@ def multiplication_table():
 multiplication_table()
 
 def traingle_area():
-    a = eval(input("what is the length of side A?"))
-    b = eval(input("What is the length of side B"))
-    c =eval(input("What is the length of side C"))
+    a = eval(input("what is the length of side A?:"))
+    b = eval(input("What is the length of side B?:"))
+    c =eval(input("What is the length of side C?:"))
     s = (a+b+c)/2
     area = math.sqrt(s*(s-a)*(s-b)*(s-c))
     print("The area of the triangle is", area)
 traingle_area()
 
 def sumSquares():
-   l =  eval(input("what is your lower bound?"))
+   l = eval(input("what is your lower bound?"))
    u = eval(input("what is your upper bound"))
    for num in range(l,u):
       number = l**2 +num**2 +u**2
