@@ -15,7 +15,7 @@ def main():
     previous_balance = eval(input('What is your previous net balance?:'))
     payment = eval(input('What is your payment amount?:'))
     payment_day = eval(input('What is the day of the billing'
-                            ' cycle in which the payment was made?:'))
+                             ' cycle in which the payment was made?:'))
     # formula's are used here
     monthly_rate = rate/12
     calc1 = previous_balance * days
