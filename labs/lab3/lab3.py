@@ -51,7 +51,7 @@ def sequence():
 
 sequence()
 
-#I dont even know
+#I dont even know, sorry
 def pi():
     temp = 2
     n = eval(input("What would you like N to be?:"))
