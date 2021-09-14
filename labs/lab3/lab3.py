@@ -3,7 +3,7 @@ Name: <Jessica Andrews>
 lab.py
 
 Point: Solving the programs in lab 3
-Certification of authenticity: I collaborated with Leslie and Katie
+Certification of authenticity: I collaborated with Lesly and Katie
 """
 
 
