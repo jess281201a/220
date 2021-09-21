@@ -1,10 +1,13 @@
 """
 Name: <your name goes here – first and last>
-<ProgramName>.py
+<Lab4>.py
+
+problem: PRoblems in lab 4
+Certification of authenticity: I coordinated with Lesly and Katie
 """
 
 from graphics import *
-
+import math
 
 def squares():
     """  <---  You can use tripled quotes to write a multi-line comment....
@@ -30,11 +33,13 @@ def squares():
 
     # create a space to instruct user
     inst_pt = Point(width / 2, height - 10)
-    instructions = Text(inst_pt, "Click to move circle")
+    instructions = Text(inst_pt, "Click to move Square")
     instructions.draw(win)
 
+
+
     # builds a circle
-    shape = Circle(Point(50, 50), 20)
+    shape = Rectangle(Point(50, 50),Point(20,20))
     shape.setOutline("red")
     shape.setFill("red")
     shape.draw(win)
@@ -43,18 +48,28 @@ def squares():
     for i in range(num_clicks):
         p = win.getMouse()
         c = shape.getCenter()  # center of circle
-
         # move amount is distance from center of circle to the
         # point where the user clicked
         dx = p.getX() - c.getX()
         dy = p.getY() - c.getY()
+        shape2 = shape.clone()
+        shape2.draw(win)
         shape.move(dx, dy)
+
+    instructions.undraw()
+    newInstruction = Text(inst_pt, "Click to end program")
+    newInstruction.draw(win)
+
 
     win.getMouse()
     win.close()
 
 
+
 def rectangle():
+
+
+
     """
     This program displays information about a rectangle drawn by the user.
     Input: Two mouse clicks for the opposite corners of a rectangle.
@@ -63,12 +78,76 @@ def rectangle():
     Formulas: area = (length)(width)   and    perimeter = 2(length+width)
     """
     pass
+    width = 400
+    height = 400
+    win = GraphWin("Draw a Rectangle", width, height)
+    directions = Text(Point(200,350), "Draw a Rectangle")
+    directions.draw(win)
+    p1 = win.getMouse()
+    p2 = win.getMouse()
+    shape = Rectangle(p1,p2)
+    shape.draw(win)
+
+    varX = p1.getX()
+    varY = p1.getY()
+    var2X = p2.getX()
+    var2Y = p2.getY()
+    print(varX)
+    print(varY)
+    print(var2X)
+    print(var2Y)
+
+    length = abs(var2X - varX)
+    height = abs(var2Y- varY)
+
+    par = (length + height) * 2
+    area = length * height
+    print(par)
+    print(area)
+
+    directions.setText("Click to close")
+    win.getMouse()
+
+def circle():
+    width = 400
+    height = 400
+    win = GraphWin("Draw a Circle", width, height)
+
+    c = win.getMouse()
+    r = win.getMouse()
+
+    center = c.getX()
+    center2 = c.getY()
+    outer = r.getX()
+    outer2 = r.getY()
+
+    radius = math.sqrt((outer - center)**2 + (outer2 - center2)**2)
+    coolCirc = Circle(c,radius)
+    coolCirc.draw(win)
+    radiusMes = Text(Point(200,10),radius)
+    radiusMes.draw(win)
+    closeProg = Text(Point(200,350),"Click to Close Program")
+    closeProg.draw(win)
+
+    win.getMouse()
+
+
+def pi():
+    n = eval(input("How many terms will you want to sum"))
+
+    def sum_of_threes():
+        add = 0
+        number = eval(input("What will be your upper bound number?:"))
+        for num in range(3, number + 1, 3):
+            add = num + add
+            print(num)
+        print("the sum of these are:", add)
 
 
 def main():
     squares()
-    # rectangle()
-    # circle()
+    rectangle()
+    circle()
     # pi2()
 
 
