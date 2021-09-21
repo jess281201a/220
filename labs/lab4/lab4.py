@@ -131,7 +131,7 @@ def circle():
 
     win.getMouse()
 
-
+# sorry brain empty
 def pi():
     n = eval(input("How many terms will you want to sum"))
 
