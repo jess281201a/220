@@ -135,13 +135,6 @@ def circle():
 def pi():
     n = eval(input("How many terms will you want to sum"))
 
-        add = 0
-        number = eval(input("What will be your upper bound number?:"))
-        for num in range(3, number + 1, 3):
-            add = num + add
-            print(num)
-        print("the sum of these are:", add)
-
 
 def main():
     squares()
