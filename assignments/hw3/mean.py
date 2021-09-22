@@ -17,10 +17,12 @@ import math
 
 def main():
 
+    # variables required for arithmetic to work
     num_in_seq = eval(input("How many values will you use?"))
     add = 0
     mult = 1
     denom = 0
+    # for loop containing arithmetic
     for i in range(num_in_seq):
         var = eval(input("Enter your variables:"))
         add = add + var**2
@@ -31,7 +33,7 @@ def main():
         harmonic_mean = num_in_seq/denom
         mult = mult * var
         geometric_mean = mult**(1/num_in_seq)
-
+# round statements to make sure the numers are correct as well as print statements
     ans1 = round(rms_aver, 3)
     print(ans1)
     ans2 = round(harmonic_mean, 3)
