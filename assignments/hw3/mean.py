@@ -33,7 +33,7 @@ def main():
         harmonic_mean = num_in_seq/denom
         mult = mult * var
         geometric_mean = mult**(1/num_in_seq)
-# round statements to make sure the numers are correct as well as print statements
+# round statements to make sure the numbers are correct as well as print statements
     ans1 = round(rms_aver, 3)
     print(ans1)
     ans2 = round(harmonic_mean, 3)
