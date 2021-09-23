@@ -23,7 +23,7 @@ def main():
     mult = 1
     denom = 0
     # for loop containing arithmetic
-    for i in range(num_in_seq):
+    for _ in range(num_in_seq):
         var = eval(input("Enter your variables:"))
         add = add + var**2
         aver = add / num_in_seq
