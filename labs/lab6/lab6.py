@@ -14,7 +14,7 @@ def name_reverse():
     print(reverse[1]+","+reverse[0])
 
 
-# name_reverse()
+name_reverse()
 
 def company_name():
 
@@ -22,7 +22,7 @@ def company_name():
     name = comp.split(".")
     print(name[1])
 
-# company_name()
+company_name()
 
 def initials():
 
@@ -35,7 +35,7 @@ def initials():
         print(first+"'s"+' initials are '+f+l)
 
 
-# initials()
+initials()
 
 def names():
 
@@ -52,7 +52,7 @@ def names():
         print(f[0]+l[0],end=' ')
 
 
-# names()
+names()
 
 def thirds():
 
@@ -64,7 +64,7 @@ def thirds():
             print(phrase[n])
 
 
-# thirds()
+thirds()
 
 def word_average():
     aver = 0
