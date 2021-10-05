@@ -145,7 +145,7 @@ def color_shape():
     win.getMouse()
     win.close()
 
-# color_shape()
+color_shape()
 
 def process_string():
     temp = 0
