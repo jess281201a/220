@@ -59,7 +59,6 @@ def send_uncrackable_message(file, friend):
     message = open_file.read()
     friend_open.write(encode(encode_better(file)))
 
-
 def main():
     # calc_check_sum('0072946520')
     # number_words("Walrus.txt","output.txt")
