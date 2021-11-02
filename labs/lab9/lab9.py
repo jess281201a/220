@@ -45,18 +45,18 @@ def writeSumOfSquares():
         squareEach(info)
         answer = sumList(info)
         outFile.write("Sum of squares = "+str(answer)+"\n")
-writeSumOfSquares()
+# writeSumOfSquares()
 
 
 def leapYear(year):
     ans = ""
     if year % 400 == 0 :
-        ans = True
+        ans = "Is leap year"
     elif not(year % 100 == 0) and year % 4 == 0:
-        ans = True
+        ans = "Is leap year"
     else:
-        ans = False
-    print(ans)
+        ans ="Is not leap year"
+    print(year, ans)
 leapYear(2001)
 
 """  
