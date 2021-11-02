@@ -57,7 +57,7 @@ def leapYear(year):
     else:
         ans ="Is not leap year"
     print(year, ans)
-leapYear(2001)
+leapYear(2012)
 
 """  
 def main():
