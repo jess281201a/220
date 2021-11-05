@@ -69,18 +69,12 @@ def draw_circle(win):
     ball.draw(win)
     return ball
 
-def draw_circle2 (win):
-    ball = Circle(Point(randint(150, 300), randint(100, 400)), randint(30, 50))
-    ball.setFill(get_random_color())
-    ball.draw(win)
-    return ball
-# def change(ball,win):
 
 
 def main():
     win = GraphWin("Bumper Cars", randint(400, 800), randint(400, 800))
     ball = draw_circle(win)
-    ball2 = draw_circle2(win)
+    ball2 = draw_circle(win)
     win.setBackground(get_random_color())
     pos = 10
     x_one = get_random(pos)
