@@ -1,0 +1,3 @@
+Sum of squares = 10
+Sum of squares = 5
+Sum of squares = 61
