@@ -110,4 +110,6 @@ def main():
     new_screen(w_center,c_center,clicked_door,winner,win)
     win.getMouse()
     win.close()
-main()
+
+if __name__ == '__main__':
+    main()
