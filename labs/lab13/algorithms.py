@@ -48,7 +48,7 @@ def selection_sort(values):
                 lowest = i
         values[low],values[lowest] = values[lowest], values[low]
     print(values)
-
+# 13
 def calc_area(rect):
     p1 = rect.getP1()
     p2 = rect.getP2()

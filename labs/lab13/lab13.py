@@ -3,6 +3,7 @@ Name: <Jessica Andrews>
 <Lab13>.py
 Certification of authenticity: I coordinated with Lesly
 """
+# 13
 from graphics import Rectangle, Point
 from algorithms import is_in_binary, selection_sort, calc_area
 def trade_alert(filename):
