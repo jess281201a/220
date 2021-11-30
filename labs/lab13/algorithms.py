@@ -70,4 +70,3 @@ def rect_sort(rectangles):
             if rectangles[i] < rectangles[lowest]:
                 lowest = i
         rectangles[low],rectangles[lowest] = rectangles[lowest], rectangles[low]
-    print(rectangles)
