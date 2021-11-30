@@ -19,11 +19,15 @@ def trade_alert(filename):
 def main():
     # trade_alert("trades.txt")
     # add other function calls here
-    Rect = Rectangle(Point(10,20),Point(20,40))
+    new_rect= []
+    Rects = [Rectangle(Point(10,20),Point(20,40)),Rectangle(Point(30,40),Point(60,80)),Rectangle(Point(100,90),Point(120,100))]
+    for i in range(len(Rects)):
+        area = calc_area(Rects[i])
+        new_rect.append(area)
     list = [10,1,4,6,91,5]
     print(is_in_binary(7,list))
     selection_sort(list)
-    print(calc_area(Rect))
+    print(calc_area(Rects))
     pass
 
 

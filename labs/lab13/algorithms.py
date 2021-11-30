@@ -63,12 +63,11 @@ def calc_area(rect):
 
 
 def rect_sort(rectangles):
-    area = calc_area(rectangles)
-    num = len(area)
+    num = len(rectangles)
     for low in range(num - 1):
         lowest = low
         for i in range(low+1,num):
-            if area[i] < area[lowest]:
+            if rectangles[i] < rectangles[lowest]:
                 lowest = i
-        area[low],area[lowest] = area[lowest], area[low]
-    print(area)
+        rectangles[low],rectangles[lowest] = rectangles[lowest], rectangles[low]
+    print(rectangles)
